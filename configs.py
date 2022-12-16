@@ -7,7 +7,7 @@ class Inputs:
     # ENTITY = 'ivision-radiographs'
 
     # General configs
-    DATASET_DIR: str = '../data/pan-radiographs/'
+    DATASET_DIR: str = '/home/david/Documents/iVision/data/pan-radiographs/'
 
     SEED = 7 # Unused until now
     NUM_WORKERS: int = 2
@@ -106,8 +106,8 @@ class Inputs:
         optimizer_name: str = 'sgd',
         num_folds: int = 1,
         val_fold: int = 5,
-        train_folds: int = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 21, 22, 23, 24, 25],
-        val_folds: int = [16, 17, 18, 19, 20],
+        train_folds: int = [1, 2, 3],
+        val_folds: int = [4, 5],
         crop_side: str='right',
         remove_border: int=75,
         dataset='full',
